@@ -151,6 +151,11 @@ and reload progress. The four-second/15-metre values are retained because they
 were the first settings that kept all three tested weapon families firing and
 selectable.
 
+## Investigation report
+
+For the underlying evidence, failed experiments, vanilla data relationships,
+and possible directions for further development, see the INVESTIGATION_REPORT.md.
+
 ## Vanilla asset and database coverage
 
 The script contains no type-name whitelist. It operates on every local object
