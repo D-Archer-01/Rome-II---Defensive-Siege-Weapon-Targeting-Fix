@@ -9,31 +9,6 @@ The release does not change combat balance. It intercepts a player-issued live
 unit attack that Rome II refuses to complete and substitutes a native
 `attack_location` order at a predicted point along the target's course.
 
-## Status
-
-The release behavior has been exercised in a campaign settlement battle with
-Bastion Ballista, Onager and Scorpion. All three accepted independent targets,
-fired, received repeated projected aim updates, released script-controller
-ownership and remained available for later orders.
-
-The final public pack (SHA-256 `d0effa2b02fb5b5d7cdff957e7947a5a5a452c03e18301102975f3ffcdd82ec9`)
-was also tested directly. Its release log records three successful battle-script
-initializations, 8 player orders, 142 predictive tracking orders, 150 matching
-controller releases and no errors. Ballista, Onager and Scorpion all appear in
-those issued orders.
-
-The successful Test 18 log contained:
-
-- 33 submitted one-mount location orders;
-- 33 matching controller releases;
-- no Lua or battle-API errors;
-- 11 Ballista, 8 Onager and 10 Scorpion predictive updates;
-- mean applied leads of 5.26 m, 5.63 m and 6.08 m respectively;
-- no use of the 30 m lead cap.
-
-Polybolos is structurally covered by the same generic path but has not yet been
-observed in a live campaign test.
-
 ## The failure being worked around
 
 The original symptom was common to Bastion Scorpion, Ballista and Onager:
@@ -212,6 +187,31 @@ The tested Bastion projectile records were:
 | Polybolos | `arrow_polybolos_bastion` | 320 | 0 | 5 s |
 
 These values are documented for context and remain vanilla in the pack.
+
+## Status
+
+The release behavior has been exercised in a campaign settlement battle with
+Bastion Ballista, Onager and Scorpion. All three accepted independent targets,
+fired, received repeated projected aim updates, released script-controller
+ownership and remained available for later orders.
+
+The final public pack (SHA-256 `d0effa2b02fb5b5d7cdff957e7947a5a5a452c03e18301102975f3ffcdd82ec9`)
+was also tested directly. Its release log records three successful battle-script
+initializations, 8 player orders, 142 predictive tracking orders, 150 matching
+controller releases and no errors. Ballista, Onager and Scorpion all appear in
+those issued orders.
+
+The successful Test 18 log contained:
+
+- 33 submitted one-mount location orders;
+- 33 matching controller releases;
+- no Lua or battle-API errors;
+- 11 Ballista, 8 Onager and 10 Scorpion predictive updates;
+- mean applied leads of 5.26 m, 5.63 m and 6.08 m respectively;
+- no use of the 30 m lead cap.
+
+Polybolos is structurally covered by the same generic path but has not yet been
+observed in a live campaign test.
 
 ## Installation
 
