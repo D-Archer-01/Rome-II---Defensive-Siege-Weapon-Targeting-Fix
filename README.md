@@ -1,6 +1,6 @@
-# Manual Fire Defensive Siege Weapons
+# Defensive Siege Weapon Targeting Fix
 
-Manual Fire Defensive Siege Weapons is a script-only Total War: ROME II mod
+Defensive Siege Weapon Targeting Fix is a script-only Total War: ROME II mod
 that works around an engine-side live-unit targeting failure affecting
 wall-mounted defensive artillery. It grew from a focused investigation of
 Bastion Scorpion, Ballista and Onager behavior.
